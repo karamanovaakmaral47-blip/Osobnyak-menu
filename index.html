@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Особняк · Mansion · Зәулім үй</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <!-- ===== АНИМИРОВАННЫЙ ФОН ===== -->
+    <div id="particles-container" class="particles-container"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#" class="logo">Особняк <span>·</span> Mansion</a>
+            <div class="nav-lang">
+                <button class="lang-btn active" data-lang="ru">RU</button>
+                <button class="lang-btn" data-lang="kk">KZ</button>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO С ФОНОМ ===== -->
+    <section class="hero" id="home">
+        <!-- Видео необязательно, но если есть, можно раскомментировать и указать путь -->
+        <!--
+        <video class="hero-video" autoplay muted loop playsinline poster="poster.jpg">
+            <source src="your-video.mp4" type="video/mp4" />
+        </video>
+        -->
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <div class="hero-badge" data-i18n="hero.badge">✦ Gastronomy &amp; Heritage</div>
+            <h1 class="hero-title">
+                <span class="light" data-i18n="hero.title1">Особняк</span><br />
+                <span data-i18n="hero.title2">Mansion</span>
+            </h1>
+            <p class="hero-sub" data-i18n="hero.sub">В самом сердце города · In the heart of the city · Қаланың қақ ортасында</p>
+            <p class="hero-desc" data-i18n="hero.desc">
+                Скрытый за высокими каменными стенами — мир тайны, роскоши и вкуса.<br />
+                Hidden behind high stone walls — a world of mystery, luxury and taste.<br />
+                Биік тас қабырғалардың артында жасырылған — құпия, сән-салтанат және дәм әлемі.
+            </p>
+            <a href="#menu" class="hero-btn" data-i18n="hero.btn">Открыть меню</a>
+        </div>
+        <div class="scroll-indicator">
+            <span data-i18n="hero.scroll">Скролл</span>
+            <div class="line"></div>
+        </div>
+    </section>
+
+    <!-- ===== МЕНЮ ===== -->
+    <main id="menu">
+
+        <!-- L'APERITIF PARISIAN -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="champagne-hero">
+                    L'Aperitif Parisian <span>·</span> 148 808 kzt
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СЫРНАЯ КОЛЛЕКЦИЯ ===== -->
+        <section class="menu-section" id="cheese">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="cheese.title">Сырная коллекция</h3>
+                    <div class="sub" data-i18n="cheese.sub">50 г каждого сыра · 50 g of each cheese · Әр ірімшіктің 50 г</div>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Грана Падано</div></div><div class="menu-item-price">8 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Раклет с трюфелем</div></div><div class="menu-item-price">3 208 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Таледжио</div></div><div class="menu-item-price">4 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Фрум д'Амбер</div></div><div class="menu-item-price">3 808 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Швейцарский с альпийскими травами</div></div><div class="menu-item-price">4 808 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Грана Падано</div></div><div class="menu-item-price">8 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Трюфельді раклет</div></div><div class="menu-item-price">3 208 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Таледжио</div></div><div class="menu-item-price">4 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Фрум д'Амбер</div></div><div class="menu-item-price">3 808 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Альпійлік шөптермен швейцариялық ірімшік</div></div><div class="menu-item-price">4 808 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Grana Padano</div></div><div class="menu-item-price">8 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Raclette with Truffle</div></div><div class="menu-item-price">3 208 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Taleggio</div></div><div class="menu-item-price">4 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fourme d'Ambert</div></div><div class="menu-item-price">3 808 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Swiss Cheese with Alpine Herbs</div></div><div class="menu-item-price">4 808 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== УСТРИЦЫ ===== -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="oysters.title">Устрицы</h3>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fine de Claire</div></div><div class="menu-item-price">4 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Gillardeau</div></div><div class="menu-item-price">4 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fine de Claire</div></div><div class="menu-item-price">4 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Gillardeau</div></div><div class="menu-item-price">4 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fine de Claire</div></div><div class="menu-item-price">4 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Gillardeau</div></div><div class="menu-item-price">4 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== МЯСНЫЕ ДЕЛИКАТЕСЫ И АНТИПАСТИ ===== -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="charcuterie.title">Мясные деликатесы и антипасти</h3>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Вяленая утка</div></div><div class="menu-item-price">7 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Антипасти</div></div><div class="menu-item-price">16 788 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Брускетта с фуа-гра и ежевикой</div></div><div class="menu-item-price">10 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Мясные деликатесы</div></div><div class="menu-item-price">15 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Тартар из говядины с муссом из пармезана</div></div><div class="menu-item-price">8 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Кептірілген үйрек</div></div><div class="menu-item-price">7 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Антипасти</div></div><div class="menu-item-price">16 788 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Фуа-гра мен ажыбақпен брускетта</div></div><div class="menu-item-price">10 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Ет деликатестері</div></div><div class="menu-item-price">15 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Пармезан муссымен сиыр етінен тартар</div></div><div class="menu-item-price">8 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Cured Duck</div></div><div class="menu-item-price">7 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Antipasti</div></div><div class="menu-item-price">16 788 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Bruschetta with Foie Gras &amp; Blackberry</div></div><div class="menu-item-price">10 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Charcuterie Board</div></div><div class="menu-item-price">15 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Beef Tartare with Parmesan Mousse</div></div><div class="menu-item-price">8 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СУПЫ ===== -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="soups.title">Супы</h3>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Холодный летний суп</div></div><div class="menu-item-price">5 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Буйабес Рояль с морепродуктами</div></div><div class="menu-item-price">6 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Грибной д'Ардеш с багетом и сыром бри</div></div><div class="menu-item-price">5 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Салқын жазғы сорпа</div></div><div class="menu-item-price">5 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Теңіз өнімдерімен Буйабес Рояль</div></div><div class="menu-item-price">6 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Багет пен бри ірімшігімен д'Ардеш саңырауқұлақ сорпасы</div></div><div class="menu-item-price">5 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Chilled Summer Soup</div></div><div class="menu-item-price">5 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Bouillabaisse Royale with Seafood</div></div><div class="menu-item-price">6 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Mushroom d'Ardèche Soup with Baguette &amp; Brie</div></div><div class="menu-item-price">5 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== САЛАТЫ ===== -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="salads.title">Салаты</h3>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Салат с крабом в соусе руй</div></div><div class="menu-item-price">8 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Черешня со страчателлой</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Зеленый салат</div></div><div class="menu-item-price">8 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Теплый стейк-салат</div></div><div class="menu-item-price">7 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Буратта с томатами</div></div><div class="menu-item-price">7 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Салат с цыпленком и романо</div></div><div class="menu-item-price">8 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Классический салат с фетой и орегано</div></div><div class="menu-item-price">8 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Салат со свеклой и муссом из пармезана и фетой</div></div><div class="menu-item-price">7 588 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Руй соусымен крабпен салат</div></div><div class="menu-item-price">8 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Стратчателламен шие</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Жасыл салат</div></div><div class="menu-item-price">8 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Жылы стейк-салат</div></div><div class="menu-item-price">7 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Томатпен буратта</div></div><div class="menu-item-price">7 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Күйдірілген романо мен күркетаук салаты</div></div><div class="menu-item-price">8 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Фета мен орегано салаты</div></div><div class="menu-item-price">8 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Қызылша, пармезан муссы мен фетамен салат</div></div><div class="menu-item-price">7 588 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Crab Salad with Rouille Sauce</div></div><div class="menu-item-price">8 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Cherries with Stracciatella</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Green Salad</div></div><div class="menu-item-price">8 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Warm Steak Salad</div></div><div class="menu-item-price">7 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Burrata with Tomatoes</div></div><div class="menu-item-price">7 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Turkey Salad with Seared Romaine</div></div><div class="menu-item-price">8 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Classic Salad with Feta &amp; Oregano</div></div><div class="menu-item-price">8 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Beetroot Salad with Parmesan Mousse &amp; Feta</div></div><div class="menu-item-price">7 588 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LA MAREE ===== -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script">La Marée</h3>
+                    <div class="sub" data-i18n="lamaree.sub">Морская гастрономия · Sea gastronomy · Теңіз гастрономиясы</div>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Тартар из двух видов рыб</div></div><div class="menu-item-price">10 788 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Жареные креветки в пряном масле</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Аппетайзеры из трех видов икры</div></div><div class="menu-item-price">10 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Запеченая дорадо по старинному рецепту</div></div><div class="menu-item-price">14 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Лосось с икорным соусом</div></div><div class="menu-item-price">12 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Осьминог по-тоскански с икрой</div></div><div class="menu-item-price">16 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Тарт с крабом и авокадо</div></div><div class="menu-item-price">16 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Чилийский сибас со спаржей и фенхелем</div></div><div class="menu-item-price">24 988 <small>kzt</small></div></div>
+                    <div class="menu-item menu-item-special"><div class="menu-item-info"><div class="menu-item-name">Краб в соусе берблан с черной икрой и трюфелем</div></div><div class="menu-item-price">18 808 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Екі түрлі балықтан тартар</div></div><div class="menu-item-price">10 788 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Хош иісті майда қуырылған асшаяндар</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Үш түрлі уылдырықтан аппетайзерлер</div></div><div class="menu-item-price">10 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Ескі рецепт бойынша пісірілген дорадо</div></div><div class="menu-item-price">14 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Уылдырық соусымен албырт</div></div><div class="menu-item-price">12 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Тоскана стилінде уылдырықпен сегізаяқ</div></div><div class="menu-item-price">16 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Краб пен авокадомен тарт</div></div><div class="menu-item-price">16 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Спаржа мен фенхельмен чилийлік сибас</div></div><div class="menu-item-price">24 988 <small>kzt</small></div></div>
+                    <div class="menu-item menu-item-special"><div class="menu-item-info"><div class="menu-item-name">Қара уылдырық пен трюфельмен берблан соусындағы краб</div></div><div class="menu-item-price">18 808 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fish Tartare (Two Varieties)</div></div><div class="menu-item-price">10 788 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Sautéed Prawns in Spiced Butter</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Three-Caviar Appetizers</div></div><div class="menu-item-price">10 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Baked Dorado by Ancient Recipe</div></div><div class="menu-item-price">14 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Salmon with Caviar Sauce</div></div><div class="menu-item-price">12 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Octopus alla Toscana with Caviar</div></div><div class="menu-item-price">16 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Crab &amp; Avocado Tart</div></div><div class="menu-item-price">16 508 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Chilean Sea Bass with Asparagus &amp; Fennel</div></div><div class="menu-item-price">24 988 <small>kzt</small></div></div>
+                    <div class="menu-item menu-item-special"><div class="menu-item-info"><div class="menu-item-name">Crab in Berblanc Sauce with Black Caviar &amp; Truffle</div></div><div class="menu-item-price">18 808 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CARTE BLANCHE & MAIN COURSE ===== -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="carte.title">Carte Blanche &amp; Main Course</h3>
+                    <div class="sub" data-i18n="carte.sub">Главная роль — за шефом · The main role — behind the chef · Басты рөл — бастықтың артында</div>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Закуска Аристократа</div></div><div class="menu-item-price">24 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Ролл из мраморного рибая с дюкселем и трюфелем</div></div><div class="menu-item-price">10 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Стейк рибай с соусом демигласс и томатным джемом</div></div><div class="menu-item-price">24 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Хрустящий цыпленок с сырным фондю</div></div><div class="menu-item-price">12 808 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Бургундские улитки в ароматном томатном соусе</div></div><div class="menu-item-price">12 788 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Турнедо Россини с фуа-гра и трюфелем</div></div><div class="menu-item-price">18 688 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Стриплойн с соусом демигласс и томатным джемом</div></div><div class="menu-item-price">14 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Утиная ножка конфи с гратеном и вишневым соусом</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Карпаччо с трюфелем</div></div><div class="menu-item-price">9 588 <small>kzt</small></div></div>
+                    <div class="menu-item menu-item-special"><div class="menu-item-info"><div class="menu-item-name">Шатобриан в глазури олоросо</div><div class="menu-item-desc">S · M · L &nbsp;|&nbsp; 268 888 · 468 888 · 698 888 kzt</div></div><div class="menu-item-price">16 888 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Аристократ закускасы</div></div><div class="menu-item-price">24 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Дюксель мен трюфельмен мраморлы рибайдан ролл</div></div><div class="menu-item-price">10 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Демигласс соусы мен томат джемімен рибай стейк</div></div><div class="menu-item-price">24 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Ірімшік фондюмен қытырлақ тауық</div></div><div class="menu-item-price">12 808 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Хош иісті томат соусындағы бургундиялық ұлулар</div></div><div class="menu-item-price">12 788 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Фуа-гра және трюфельмен Турнедо Россини</div></div><div class="menu-item-price">18 688 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Демигласс соусы мен томат джемімен стриплойн</div></div><div class="menu-item-price">14 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Гратен мен шие соусымен үйрек аяғы конфи</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Трюфельді карпаччо</div></div><div class="menu-item-price">9 588 <small>kzt</small></div></div>
+                    <div class="menu-item menu-item-special"><div class="menu-item-info"><div class="menu-item-name">Олоросо глазуріндегі Шатобриан</div><div class="menu-item-desc">S · M · L &nbsp;|&nbsp; 268 888 · 468 888 · 698 888 kzt</div></div><div class="menu-item-price">16 888 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Aristocrat's Appetizer</div></div><div class="menu-item-price">24 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Marbled Ribeye Roll with Duxelles &amp; Truffle</div></div><div class="menu-item-price">10 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Ribeye Steak with Demi-Glace &amp; Tomato Jam</div></div><div class="menu-item-price">24 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Crispy Chicken with Cheese Fondue</div></div><div class="menu-item-price">12 808 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Burgundy Escargots in Aromatic Tomato Sauce</div></div><div class="menu-item-price">12 788 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Tournedos Rossini with Foie Gras &amp; Truffle</div></div><div class="menu-item-price">18 688 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Striploin with Demi-Glace &amp; Tomato Jam</div></div><div class="menu-item-price">14 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Duck Leg Confit with Gratin &amp; Cherry Sauce</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Carpaccio with Truffle</div></div><div class="menu-item-price">9 588 <small>kzt</small></div></div>
+                    <div class="menu-item menu-item-special"><div class="menu-item-info"><div class="menu-item-name">Chateaubriand in Oloroso Glaze</div><div class="menu-item-desc">S · M · L &nbsp;|&nbsp; 268 888 · 468 888 · 698 888 kzt</div></div><div class="menu-item-price">16 888 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== НАСЛЕДИЕ ИТАЛИИ ===== -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="italy.title">Наследие Италии</h3>
+                    <div class="sub" data-i18n="italy.sub">Паста · Пицца · Pasta · Pizza · Паста · Пицца</div>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Лингвини с крабом и трюфелем</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Паста фрутти ди маре</div></div><div class="menu-item-price">18 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Фетуччини с мраморной говядиной и белыми грибами</div></div><div class="menu-item-price">8 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Спагетти с тигровыми креветками и песто</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item menu-item-special"><div class="menu-item-info"><div class="menu-item-name">Black Caviar Linguine</div></div><div class="menu-item-price">28 808 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Il Classico Маргарита</div></div><div class="menu-item-price">8 998 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Верона с рукколой</div></div><div class="menu-item-price">7 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Quattro Formaggi</div></div><div class="menu-item-price">8 998 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Dolce Vita</div></div><div class="menu-item-price">8 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Straccetti</div></div><div class="menu-item-price">8 998 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">BBQ</div></div><div class="menu-item-price">8 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Пепперони с томатами</div></div><div class="menu-item-price">8 508 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Краб және трюфельмен лингвини</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Паста фрутти ди маре</div></div><div class="menu-item-price">18 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Мраморлы сиыр еті мен ақ саңырауқұлақпен феттуччини</div></div><div class="menu-item-price">8 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Жолбарыс асшаяндары мен пестомен спагетти</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item menu-item-special"><div class="menu-item-info"><div class="menu-item-name">Black Caviar Linguine</div></div><div class="menu-item-price">28 808 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Il Classico Маргарита</div></div><div class="menu-item-price">8 998 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Рукколамен Верона</div></div><div class="menu-item-price">7 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Quattro Formaggi</div></div><div class="menu-item-price">8 998 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Dolce Vita</div></div><div class="menu-item-price">8 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Straccetti</div></div><div class="menu-item-price">8 998 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">BBQ</div></div><div class="menu-item-price">8 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Томатпен пепперони</div></div><div class="menu-item-price">8 508 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Linguine with Crab &amp; Truffle</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Pasta Frutti di Mare</div></div><div class="menu-item-price">18 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Fettuccine with Marbled Beef &amp; Porcini</div></div><div class="menu-item-price">8 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Spaghetti with Tiger Prawns &amp; Pesto</div></div><div class="menu-item-price">9 888 <small>kzt</small></div></div>
+                    <div class="menu-item menu-item-special"><div class="menu-item-info"><div class="menu-item-name">Black Caviar Linguine</div></div><div class="menu-item-price">28 808 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Il Classico Margherita</div></div><div class="menu-item-price">8 998 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Verona with Rocket</div></div><div class="menu-item-price">7 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Quattro Formaggi</div></div><div class="menu-item-price">8 998 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Dolce Vita</div></div><div class="menu-item-price">8 588 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Straccetti</div></div><div class="menu-item-price">8 998 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">BBQ</div></div><div class="menu-item-price">8 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Pepperoni with Tomatoes</div></div><div class="menu-item-price">8 508 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ГАРНИРЫ ===== -->
+        <section class="menu-section">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="sides.title">Гарниры</h3>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Ризотто с грибами</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Гратен</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Овощи из печи</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Молодая спаржа</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Картофельное пюре Робюшона с трюфелем</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Саңырауқұлақпен ризотто</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Гратен</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Пеште пісірілген көкөністер</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Жас спаржа</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Трюфельмен Робюшон картоп пюресі</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Mushroom Risotto</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Gratin</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Oven-Roasted Vegetables</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Young Asparagus</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Robuchon Mashed Potato with Truffle</div></div><div class="menu-item-price">3 988 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ДЕСЕРТЫ (с фоном garden-fountain) ===== -->
+        <section class="menu-section" id="desserts">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="desserts.title">Десерты</h3>
+                    <div class="gold-divider"></div>
+                </div>
+                <div class="menu-grid lang-content active" data-lang="ru">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Малина в шоколаде</div></div><div class="menu-item-price">10 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Сметанник с меренгой</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Сливочный медовик</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Паннакотта с клубникой и земляникой</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Ягодная тарталетка</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="kk">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Шоколадтағы таңқурай</div></div><div class="menu-item-price">10 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Беземен сметанник</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Кремді бал торт</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Құлпынай және орман жидегімен панакотта</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Жидекті тарталетка</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+                <div class="menu-grid lang-content" data-lang="en">
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Raspberry in Chocolate</div></div><div class="menu-item-price">10 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Smetannik with Meringue</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Creamy Honey Cake</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Panna Cotta with Strawberry &amp; Wild Strawberry</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="menu-item"><div class="menu-item-info"><div class="menu-item-name">Berry Tartlet</div></div><div class="menu-item-price">4 888 <small>kzt</small></div></div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== БАР (с фоном bar-tower) ===== -->
+        <section class="menu-section" id="bar">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script" data-i18n="bar.title">Бар</h3>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <!-- РУССКИЙ БАР -->
+                <div class="lang-content active" data-lang="ru">
+                    <div class="bar-grid">
+                        <div>
+                            <div class="bar-category"><h4>Минеральная вода &amp; соки</h4>
+                                <div class="bar-item"><span class="name">San Benedetto 0,75 ml</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tassay Excellent 0,75 ml</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tassay Emerald 0,75 ml</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tassay 0,25 ml</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Borjomi 0,33 ml</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Coca Cola / Sprite / Fanta 0,25 ml</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Red Bull 0,25 ml</span><span class="price">2 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Thomas Henry 0,2 ml</span><span class="price">3 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hysope 0,2 ml</span><span class="price">3 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Swell 0,2 ml / 0,7 ml</span><span class="price">3 188 / 5 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Пиво</h4>
+                                <div class="bar-item"><span class="name">Guiness (Ireland) 0,44 ml</span><span class="price">4 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Paulainer Heffe Weissbier Not Alco (Germany) 0,5 ml</span><span class="price">4 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Corona Extra (Mexico)</span><span class="price">3 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tsingtao (China)</span><span class="price">2 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Bitburger (Germany) / 0 %</span><span class="price">3 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Benedictiner Hell (Germany)</span><span class="price">4 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Blance de Bruxelles (Belgium)</span><span class="price">4 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Вермуты</h4>
+                                <div class="bar-item"><span class="name">Martini Bianco / Rosso / Extra Dry 100 ml</span><span class="price">1 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martini Fiero 75 ml</span><span class="price">1 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Коньяк 50 ml</h4>
+                                <div class="bar-item"><span class="name">Martell VS</span><span class="price">4 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martell VSOP</span><span class="price">7 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martell XO</span><span class="price">21 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martell L'OR 0,700 ml</span><span class="price">1 900 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy VS</span><span class="price">4 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy VSOP</span><span class="price">8 008 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy XO</span><span class="price">25 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy Paradis 0,700 ml</span><span class="price">1 808 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Армянский бренди 50 ml</h4>
+                                <div class="bar-item"><span class="name">Ararat 10 YO</span><span class="price">3 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ararat Cherry/Apricot</span><span class="price">2 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ararat Charles Aznavour 0,750 ml</span><span class="price">315 088 kzt</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bar-category"><h4>Шотландский купажированный виски 50 ml</h4>
+                                <div class="bar-item"><span class="name">Chivas Regal 12 YO</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal 15 YO</span><span class="price">6 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal 18 YO</span><span class="price">8 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal Royal Salute 21 YO</span><span class="price">14 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal Ultis</span><span class="price">220 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal 25 YO 0,700 ml</span><span class="price">499 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Monkey Shoulder</span><span class="price">5 388 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Ирландский виски 50 ml</h4>
+                                <div class="bar-item"><span class="name">Jameson Crested</span><span class="price">3 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Jameson Black Barrel</span><span class="price">3 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">West Cork Black Cask</span><span class="price">3 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">West Cork Single Malt Rum Cask</span><span class="price">3 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">West Cork 7YO Single Malt</span><span class="price">6 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Бурбон 50 ml</h4>
+                                <div class="bar-item"><span class="name">Jack Daniels Gentleman Jack</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Four Roses Small Batch</span><span class="price">3 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Bulleit Bourbon</span><span class="price">3 588 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Шотландский односолодовый виски 50 ml</h4>
+                                <div class="bar-item"><span class="name">The Glenlivet 12 YO</span><span class="price">5 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenlivet 15 YO</span><span class="price">8 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenlivet 18 YO</span><span class="price">12 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie Original 12 YO</span><span class="price">5 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie The Lasanta 15 YO</span><span class="price">7 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie Extremaly Rare 18 YO</span><span class="price">17 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie Signet 21 YO 0,700 ml</span><span class="price">450 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie The Nectar d'Or 16 YO</span><span class="price">8 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich 12 YO</span><span class="price">6 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich 15 YO</span><span class="price">8 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich 18 YO</span><span class="price">10 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich Grand Cru 23 YO 0,700 ml</span><span class="price">800 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Double Cask 12 YO</span><span class="price">9 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Sherry Oak 12 YO</span><span class="price">10 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Double Cask 15 YO</span><span class="price">16 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Double Cask 18 YO</span><span class="price">33 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Sherry Oak 18 YO</span><span class="price">39 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Rare Cask</span><span class="price">500 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Highland Park 12 YO</span><span class="price">5 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Highland Park 15 YO</span><span class="price">7 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Highland Park 18 YO</span><span class="price">13 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenrothes 15 YO</span><span class="price">12 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenrothes 18 YO</span><span class="price">18 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Balvenie Doublewood 12 YO</span><span class="price">9 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Balvenie Doublewood 14 YO</span><span class="price">13 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Ром 50 ml</h4>
+                                <div class="bar-item"><span class="name">BUMBU Creme</span><span class="price">3 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">BUMBU Original</span><span class="price">3 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">BUMBU XO</span><span class="price">4 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Zacapa 23 YO</span><span class="price">7 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Zacapa XO</span><span class="price">12 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Plantation XO 20th Anniversary</span><span class="price">5 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Текила 50 ml</h4>
+                                <div class="bar-item"><span class="name">Avion Silver</span><span class="price">3 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Avion Reposado</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Avion Cristalino</span><span class="price">10 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Volcan Blanco</span><span class="price">5 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Patron Silver</span><span class="price">3 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Patron Anejo</span><span class="price">4 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Don Julio 1942</span><span class="price">18 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Джин 50 ml</h4>
+                                <div class="bar-item"><span class="name">Beefeater Pink Strawberry</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beefeater Blood Orange</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Monkey 47 Schwarzwald</span><span class="price">6 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Citadelle Original</span><span class="price">3 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hendrick's</span><span class="price">5 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tanqueray No. Ten</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tanqueray No. Ten (Flor de Sevilla / Black Currant / 0%)</span><span class="price">3 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Roku</span><span class="price">3 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Водка 50 ml</h4>
+                                <div class="bar-item"><span class="name">Absolut Elyx (Sweden)</span><span class="price">3 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Belvedere Organic (Poland)</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Belvedere 10 (Poland) 700 ml</span><span class="price">188 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Чистые Росы BIO (Russia)</span><span class="price">3 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Grey Goose (France)</span><span class="price">3 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beluga Gold Line (Montenegro)</span><span class="price">13 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beluga Noble (Montenegro)</span><span class="price">4 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beluga Transatlantic (Montenegro)</span><span class="price">5 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Reyka (Iceland)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ketel One (Netherlands)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Danzka Fory (Germany)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Царская Золотая (Russia)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Sobolinaya (France)</span><span class="price">2 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tenjaku (Japan)</span><span class="price">2 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Lex by Nemiroff (Ukraine)</span><span class="price">2 788 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Лимонады -->
+                    <div style="max-width:820px;margin:24px auto 0;">
+                        <div class="bar-category"><h4>Лимонады</h4>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 32px;">
+                                <div class="bar-item"><span class="name">Каламанси / Мандарин / Лайм 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Каламанси / Мандарин / Лайм 0,5л</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Арбуз / Лесные ягоды 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Арбуз / Лесные ягоды 0,5л</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Клубника / Улун / Кокос 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Клубника / Улун / Кокос 0,5л</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Груша / Зеленое Яблоко 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Груша / Зеленое яблоко 0,5л</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Драгонфрут / Банан / Маракуйя 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Драгонфрут / Банан / Маракуйя 0,5л</span><span class="price">2 188 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Смузи, фреши -->
+                    <div style="max-width:820px;margin:16px auto 0;">
+                        <div class="bar-category"><h4>Смузи, фреши</h4>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 32px;">
+                                <div class="bar-item"><span class="name">Фреш Апельсин</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Фреш Грейпфрут</span><span class="price">4 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Фреш Яблоко</span><span class="price">4 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Малина-Голубика</span><span class="price">3 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Шпинат-Сельдерей</span><span class="price">2 888 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Авторские коктейли -->
+                    <div style="max-width:820px;margin:24px auto 0;">
+                        <div class="bar-category"><h4>Авторские коктейли</h4>
+                            <div class="cocktail-grid">
+                                <div class="cocktail-item"><span class="name">Гувернантка</span><span class="desc">Лимончелла, Сливочный ликер, Кордиал Лимон/Лайм</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Портрет Агаты</span><span class="desc">Клубничный джин, Сливовое вино, Винный Аперитив</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Лили Бриз</span><span class="desc">Грушевая Водка, Цитрусовый Ликер, Prosecco</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Графиня на Полночь</span><span class="desc">Б/а Игристое вино, Б/а Джин, Кордиал Жасмин/Лайм</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Месье Шато</span><span class="desc">Бурбон, Миндальный ликер, Медовый Сироп</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Хранитель Тишины</span><span class="desc">Армянский Бренди, Кордиал Персика, Винный Аперитив</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Амелье</span><span class="desc">Бурбон, Кымыз, Пряный Сироп</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Martina Nerra</span><span class="desc">Martini Fiero, Xeres, Mandarine Napoleon</span><span class="price">5 088 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Чай / Кофе -->
+                    <div style="max-width:820px;margin:24px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;">
+                        <div>
+                            <div class="bar-category"><h4>Листовой чай</h4>
+                                <div class="bar-item"><span class="name">Ассам</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Сенча</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Молочный Улун</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Эрл Грей</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Жасмин</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ройбуш</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Да Хун Пао</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Шу Пуэр</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Тегуанинь</span><span class="price">2 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Авторский чай</h4>
+                                <div class="bar-item"><span class="name">Ташкентский</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Марокканский</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Имбирный</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Лесной Сбор</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Дикие Травы</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Сицилийский Апельсин</span><span class="price">3 788 kzt</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bar-category"><h4>Кофе, Матча</h4>
+                                <div class="bar-item"><span class="name">Эспрессо</span><span class="price">988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Доппио</span><span class="price">1 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Американо</span><span class="price">1 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Капучино</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Латте</span><span class="price">1 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Флэт уайт</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Бамбл Кофе</span><span class="price">2 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Матча Латте</span><span class="price">2 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Матча Кокос-Персик</span><span class="price">2 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Матча Банан-Клубника</span><span class="price">2 688 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-notice">Обслуживание 10%</div>
+                </div>
+
+                <!-- КАЗАХСКИЙ БАР (полный) -->
+                <div class="lang-content" data-lang="kk">
+                    <div class="bar-grid">
+                        <div>
+                            <div class="bar-category"><h4>Минералды су &amp; шырындар</h4>
+                                <div class="bar-item"><span class="name">San Benedetto 0,75 ml</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tassay Excellent 0,75 ml</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tassay Emerald 0,75 ml</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tassay 0,25 ml</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Borjomi 0,33 ml</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Coca Cola / Sprite / Fanta 0,25 ml</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Red Bull 0,25 ml</span><span class="price">2 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Thomas Henry 0,2 ml</span><span class="price">3 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hysope 0,2 ml</span><span class="price">3 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Swell 0,2 ml / 0,7 ml</span><span class="price">3 188 / 5 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Сыра</h4>
+                                <div class="bar-item"><span class="name">Guiness (Ireland) 0,44 ml</span><span class="price">4 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Paulainer Heffe Weissbier Not Alco (Germany) 0,5 ml</span><span class="price">4 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Corona Extra (Mexico)</span><span class="price">3 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tsingtao (China)</span><span class="price">2 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Bitburger (Germany) / 0 %</span><span class="price">3 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Benedictiner Hell (Germany)</span><span class="price">4 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Blance de Bruxelles (Belgium)</span><span class="price">4 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Вермуттар</h4>
+                                <div class="bar-item"><span class="name">Martini Bianco / Rosso / Extra Dry 100 ml</span><span class="price">1 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martini Fiero 75 ml</span><span class="price">1 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Коньяк 50 ml</h4>
+                                <div class="bar-item"><span class="name">Martell VS</span><span class="price">4 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martell VSOP</span><span class="price">7 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martell XO</span><span class="price">21 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martell L'OR 0,700 ml</span><span class="price">1 900 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy VS</span><span class="price">4 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy VSOP</span><span class="price">8 008 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy XO</span><span class="price">25 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy Paradis 0,700 ml</span><span class="price">1 808 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Армян бренди 50 ml</h4>
+                                <div class="bar-item"><span class="name">Ararat 10 YO</span><span class="price">3 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ararat Cherry/Apricot</span><span class="price">2 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ararat Charles Aznavour 0,750 ml</span><span class="price">315 088 kzt</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bar-category"><h4>Шотланд купаждалған виски 50 ml</h4>
+                                <div class="bar-item"><span class="name">Chivas Regal 12 YO</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal 15 YO</span><span class="price">6 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal 18 YO</span><span class="price">8 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal Royal Salute 21 YO</span><span class="price">14 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal Ultis</span><span class="price">220 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal 25 YO 0,700 ml</span><span class="price">499 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Monkey Shoulder</span><span class="price">5 388 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Ирланд виски 50 ml</h4>
+                                <div class="bar-item"><span class="name">Jameson Crested</span><span class="price">3 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Jameson Black Barrel</span><span class="price">3 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">West Cork Black Cask</span><span class="price">3 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">West Cork Single Malt Rum Cask</span><span class="price">3 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">West Cork 7YO Single Malt</span><span class="price">6 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Бурбон 50 ml</h4>
+                                <div class="bar-item"><span class="name">Jack Daniels Gentleman Jack</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Four Roses Small Batch</span><span class="price">3 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Bulleit Bourbon</span><span class="price">3 588 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Шотланд бір уытты виски 50 ml</h4>
+                                <div class="bar-item"><span class="name">The Glenlivet 12 YO</span><span class="price">5 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenlivet 15 YO</span><span class="price">8 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenlivet 18 YO</span><span class="price">12 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie Original 12 YO</span><span class="price">5 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie The Lasanta 15 YO</span><span class="price">7 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie Extremaly Rare 18 YO</span><span class="price">17 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie Signet 21 YO 0,700 ml</span><span class="price">450 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie The Nectar d'Or 16 YO</span><span class="price">8 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich 12 YO</span><span class="price">6 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich 15 YO</span><span class="price">8 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich 18 YO</span><span class="price">10 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich Grand Cru 23 YO 0,700 ml</span><span class="price">800 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Double Cask 12 YO</span><span class="price">9 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Sherry Oak 12 YO</span><span class="price">10 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Double Cask 15 YO</span><span class="price">16 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Double Cask 18 YO</span><span class="price">33 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Sherry Oak 18 YO</span><span class="price">39 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Rare Cask</span><span class="price">500 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Highland Park 12 YO</span><span class="price">5 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Highland Park 15 YO</span><span class="price">7 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Highland Park 18 YO</span><span class="price">13 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenrothes 15 YO</span><span class="price">12 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenrothes 18 YO</span><span class="price">18 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Balvenie Doublewood 12 YO</span><span class="price">9 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Balvenie Doublewood 14 YO</span><span class="price">13 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Ром 50 ml</h4>
+                                <div class="bar-item"><span class="name">BUMBU Creme</span><span class="price">3 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">BUMBU Original</span><span class="price">3 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">BUMBU XO</span><span class="price">4 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Zacapa 23 YO</span><span class="price">7 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Zacapa XO</span><span class="price">12 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Plantation XO 20th Anniversary</span><span class="price">5 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Текила 50 ml</h4>
+                                <div class="bar-item"><span class="name">Avion Silver</span><span class="price">3 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Avion Reposado</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Avion Cristalino</span><span class="price">10 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Volcan Blanco</span><span class="price">5 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Patron Silver</span><span class="price">3 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Patron Anejo</span><span class="price">4 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Don Julio 1942</span><span class="price">18 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Джин 50 ml</h4>
+                                <div class="bar-item"><span class="name">Beefeater Pink Strawberry</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beefeater Blood Orange</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Monkey 47 Schwarzwald</span><span class="price">6 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Citadelle Original</span><span class="price">3 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hendrick's</span><span class="price">5 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tanqueray No. Ten</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tanqueray No. Ten (Flor de Sevilla / Black Currant / 0%)</span><span class="price">3 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Roku</span><span class="price">3 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Арақ 50 ml</h4>
+                                <div class="bar-item"><span class="name">Absolut Elyx (Sweden)</span><span class="price">3 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Belvedere Organic (Poland)</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Belvedere 10 (Poland) 700 ml</span><span class="price">188 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Чистые Росы BIO (Russia)</span><span class="price">3 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Grey Goose (France)</span><span class="price">3 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beluga Gold Line (Montenegro)</span><span class="price">13 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beluga Noble (Montenegro)</span><span class="price">4 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beluga Transatlantic (Montenegro)</span><span class="price">5 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Reyka (Iceland)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ketel One (Netherlands)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Danzka Fory (Germany)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Царская Золотая (Russia)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Sobolinaya (France)</span><span class="price">2 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tenjaku (Japan)</span><span class="price">2 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Lex by Nemiroff (Ukraine)</span><span class="price">2 788 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Лимонадтар -->
+                    <div style="max-width:820px;margin:24px auto 0;">
+                        <div class="bar-category"><h4>Лимонадтар</h4>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 32px;">
+                                <div class="bar-item"><span class="name">Каламанси / Мандарин / Лайм 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Каламанси / Мандарин / Лайм 0,5л</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Қарбыз / Орман жидектері 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Қарбыз / Орман жидектері 0,5л</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Құлпынай / Улун / Кокос 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Құлпынай / Улун / Кокос 0,5л</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Алмұрт / Жасыл Алма 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Алмұрт / Жасыл алма 0,5л</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Драгонфрут / Банан / Маракуйя 1л</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Драгонфрут / Банан / Маракуйя 0,5л</span><span class="price">2 188 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Смузи, фрештер -->
+                    <div style="max-width:820px;margin:16px auto 0;">
+                        <div class="bar-category"><h4>Смузи, фрештер</h4>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 32px;">
+                                <div class="bar-item"><span class="name">Фреш Апельсин</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Фреш Грейпфрут</span><span class="price">4 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Фреш Алма</span><span class="price">4 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Таңқурай-Көкжидек</span><span class="price">3 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Шпинат-Балдырған</span><span class="price">2 888 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Авторлық коктейльдер -->
+                    <div style="max-width:820px;margin:24px auto 0;">
+                        <div class="bar-category"><h4>Авторлық коктейльдер</h4>
+                            <div class="cocktail-grid">
+                                <div class="cocktail-item"><span class="name">Гувернантка</span><span class="desc">Лимончелла, Кремді ликер, Лимон/Лайм кордиалы</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Агата Портреті</span><span class="desc">Құлпынайлы джин, Қара өрік шарабы, Шарап апперитиві</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Лили Бриз</span><span class="desc">Алмұрт арағы, Цитрус ликері, Prosecco</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Түн Ортасындағы Графиня</span><span class="desc">Алкогольсіз көпіршікті шарап, Алкогольсіз джин, Жасмин/Лайм кордиалы</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Месье Шато</span><span class="desc">Бурбон, Бадам ликері, Бал сиропы</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Тыныштық Сақшысы</span><span class="desc">Армян бренди, Шабдалы кордиалы, Шарап апперитиві</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Амелье</span><span class="desc">Бурбон, Қымыз, Дәмдіауыз сиропы</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Martina Nerra</span><span class="desc">Martini Fiero, Xeres, Mandarine Napoleon</span><span class="price">5 088 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Шай / Кофе -->
+                    <div style="max-width:820px;margin:24px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;">
+                        <div>
+                            <div class="bar-category"><h4>Жапырақты шай</h4>
+                                <div class="bar-item"><span class="name">Ассам</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Сенча</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Сүтті Улун</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Эрл Грей</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Жасмин</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ройбуш</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Да Хун Пао</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Шу Пуэр</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Тегуанинь</span><span class="price">2 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Авторлық шай</h4>
+                                <div class="bar-item"><span class="name">Ташкенттік</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Мароккандық</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Зімбірлі</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Орман Жинағы</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Жабайы Шөптер</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Сицилиялық Апельсин</span><span class="price">3 788 kzt</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bar-category"><h4>Кофе, Матча</h4>
+                                <div class="bar-item"><span class="name">Эспрессо</span><span class="price">988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Доппио</span><span class="price">1 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Американо</span><span class="price">1 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Капучино</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Латте</span><span class="price">1 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Флэт уайт</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Бамбл Кофе</span><span class="price">2 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Матча Латте</span><span class="price">2 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Матча Кокос-Шабдалы</span><span class="price">2 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Матча Банан-Құлпынай</span><span class="price">2 688 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-notice">Қызмет 10%</div>
+                </div>
+
+                <!-- АНГЛИЙСКИЙ БАР (полный) -->
+                <div class="lang-content" data-lang="en">
+                    <div class="bar-grid">
+                        <div>
+                            <div class="bar-category"><h4>Mineral Water &amp; Juices</h4>
+                                <div class="bar-item"><span class="name">San Benedetto 0.75 ml</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tassay Excellent 0.75 ml</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tassay Emerald 0.75 ml</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tassay 0.25 ml</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Borjomi 0.33 ml</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Coca Cola / Sprite / Fanta 0.25 ml</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Red Bull 0.25 ml</span><span class="price">2 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Thomas Henry 0.2 ml</span><span class="price">3 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hysope 0.2 ml</span><span class="price">3 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Swell 0.2 ml / 0.7 ml</span><span class="price">3 188 / 5 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Beer</h4>
+                                <div class="bar-item"><span class="name">Guiness (Ireland) 0.44 ml</span><span class="price">4 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Paulainer Heffe Weissbier Non-Alco (Germany) 0.5 ml</span><span class="price">4 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Corona Extra (Mexico)</span><span class="price">3 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tsingtao (China)</span><span class="price">2 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Bitburger (Germany) / 0%</span><span class="price">3 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Benedictiner Hell (Germany)</span><span class="price">4 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Blanche de Bruxelles (Belgium)</span><span class="price">4 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Vermouth</h4>
+                                <div class="bar-item"><span class="name">Martini Bianco / Rosso / Extra Dry 100 ml</span><span class="price">1 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martini Fiero 75 ml</span><span class="price">1 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Cognac 50 ml</h4>
+                                <div class="bar-item"><span class="name">Martell VS</span><span class="price">4 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martell VSOP</span><span class="price">7 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martell XO</span><span class="price">21 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Martell L'OR 0.700 ml</span><span class="price">1 900 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy VS</span><span class="price">4 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy VSOP</span><span class="price">8 008 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy XO</span><span class="price">25 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hennessy Paradis 0.700 ml</span><span class="price">1 808 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Armenian Brandy 50 ml</h4>
+                                <div class="bar-item"><span class="name">Ararat 10 YO</span><span class="price">3 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ararat Cherry/Apricot</span><span class="price">2 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ararat Charles Aznavour 0.750 ml</span><span class="price">315 088 kzt</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bar-category"><h4>Scotch Blended Whisky 50 ml</h4>
+                                <div class="bar-item"><span class="name">Chivas Regal 12 YO</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal 15 YO</span><span class="price">6 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal 18 YO</span><span class="price">8 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal Royal Salute 21 YO</span><span class="price">14 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal Ultis</span><span class="price">220 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chivas Regal 25 YO 0.700 ml</span><span class="price">499 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Monkey Shoulder</span><span class="price">5 388 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Irish Whiskey 50 ml</h4>
+                                <div class="bar-item"><span class="name">Jameson Crested</span><span class="price">3 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Jameson Black Barrel</span><span class="price">3 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">West Cork Black Cask</span><span class="price">3 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">West Cork Single Malt Rum Cask</span><span class="price">3 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">West Cork 7YO Single Malt</span><span class="price">6 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Bourbon 50 ml</h4>
+                                <div class="bar-item"><span class="name">Jack Daniels Gentleman Jack</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Four Roses Small Batch</span><span class="price">3 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Bulleit Bourbon</span><span class="price">3 588 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Scotch Single Malt Whisky 50 ml</h4>
+                                <div class="bar-item"><span class="name">The Glenlivet 12 YO</span><span class="price">5 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenlivet 15 YO</span><span class="price">8 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenlivet 18 YO</span><span class="price">12 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie Original 12 YO</span><span class="price">5 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie The Lasanta 15 YO</span><span class="price">7 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie Extremely Rare 18 YO</span><span class="price">17 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie Signet 21 YO 0.700 ml</span><span class="price">450 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Glenmorangie The Nectar d'Or 16 YO</span><span class="price">8 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich 12 YO</span><span class="price">6 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich 15 YO</span><span class="price">8 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich 18 YO</span><span class="price">10 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenfiddich Grand Cru 23 YO 0.700 ml</span><span class="price">800 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Double Cask 12 YO</span><span class="price">9 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Sherry Oak 12 YO</span><span class="price">10 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Double Cask 15 YO</span><span class="price">16 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Double Cask 18 YO</span><span class="price">33 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Sherry Oak 18 YO</span><span class="price">39 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Macallan Rare Cask</span><span class="price">500 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Highland Park 12 YO</span><span class="price">5 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Highland Park 15 YO</span><span class="price">7 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Highland Park 18 YO</span><span class="price">13 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenrothes 15 YO</span><span class="price">12 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Glenrothes 18 YO</span><span class="price">18 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Balvenie Doublewood 12 YO</span><span class="price">9 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">The Balvenie Doublewood 14 YO</span><span class="price">13 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Rum 50 ml</h4>
+                                <div class="bar-item"><span class="name">BUMBU Creme</span><span class="price">3 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">BUMBU Original</span><span class="price">3 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">BUMBU XO</span><span class="price">4 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Zacapa 23 YO</span><span class="price">7 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Zacapa XO</span><span class="price">12 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Plantation XO 20th Anniversary</span><span class="price">5 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Tequila 50 ml</h4>
+                                <div class="bar-item"><span class="name">Avion Silver</span><span class="price">3 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Avion Reposado</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Avion Cristalino</span><span class="price">10 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Volcan Blanco</span><span class="price">5 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Patron Silver</span><span class="price">3 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Patron Anejo</span><span class="price">4 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Don Julio 1942</span><span class="price">18 788 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Gin 50 ml</h4>
+                                <div class="bar-item"><span class="name">Beefeater Pink Strawberry</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beefeater Blood Orange</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Monkey 47 Schwarzwald</span><span class="price">6 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Citadelle Original</span><span class="price">3 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Hendrick's</span><span class="price">5 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tanqueray No. Ten</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tanqueray No. Ten (Flor de Sevilla / Black Currant / 0%)</span><span class="price">3 388 kzt</span></div>
+                                <div class="bar-item"><span class="name">Roku</span><span class="price">3 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Vodka 50 ml</h4>
+                                <div class="bar-item"><span class="name">Absolut Elyx (Sweden)</span><span class="price">3 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Belvedere Organic (Poland)</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Belvedere 10 (Poland) 700 ml</span><span class="price">188 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Chistye Rosy BIO (Russia)</span><span class="price">3 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Grey Goose (France)</span><span class="price">3 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beluga Gold Line (Montenegro)</span><span class="price">13 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beluga Noble (Montenegro)</span><span class="price">4 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Beluga Transatlantic (Montenegro)</span><span class="price">5 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Reyka (Iceland)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ketel One (Netherlands)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Danzka Fory (Germany)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tsarskaya Zolotaya (Russia)</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Sobolinaya (France)</span><span class="price">2 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tenjaku (Japan)</span><span class="price">2 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Lex by Nemiroff (Ukraine)</span><span class="price">2 788 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lemonades -->
+                    <div style="max-width:820px;margin:24px auto 0;">
+                        <div class="bar-category"><h4>Lemonades</h4>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 32px;">
+                                <div class="bar-item"><span class="name">Calamansi / Mandarin / Lime 1L</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Calamansi / Mandarin / Lime 0.5L</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Watermelon / Forest Berries 1L</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Watermelon / Forest Berries 0.5L</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Strawberry / Oolong / Coconut 1L</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Strawberry / Oolong / Coconut 0.5L</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Pear / Green Apple 1L</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Pear / Green Apple 0.5L</span><span class="price">2 188 kzt</span></div>
+                                <div class="bar-item"><span class="name">Dragon Fruit / Banana / Passion Fruit 1L</span><span class="price">4 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Dragon Fruit / Banana / Passion Fruit 0.5L</span><span class="price">2 188 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Smoothies, Fresh Juices -->
+                    <div style="max-width:820px;margin:16px auto 0;">
+                        <div class="bar-category"><h4>Smoothies, Fresh Juices</h4>
+                            <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px 32px;">
+                                <div class="bar-item"><span class="name">Fresh Orange</span><span class="price">4 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Fresh Grapefruit</span><span class="price">4 988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Fresh Apple</span><span class="price">4 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Raspberry-Blueberry</span><span class="price">3 088 kzt</span></div>
+                                <div class="bar-item"><span class="name">Spinach-Celery</span><span class="price">2 888 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Signature Cocktails -->
+                    <div style="max-width:820px;margin:24px auto 0;">
+                        <div class="bar-category"><h4>Signature Cocktails</h4>
+                            <div class="cocktail-grid">
+                                <div class="cocktail-item"><span class="name">The Governess</span><span class="desc">Limoncello, Cream Liqueur, Lemon/Lime Cordial</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Agatha's Portrait</span><span class="desc">Strawberry Gin, Plum Wine, Wine Aperitif</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Lily Breeze</span><span class="desc">Pear Vodka, Citrus Liqueur, Prosecco</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Countess at Midnight</span><span class="desc">N/A Sparkling Wine, N/A Gin, Jasmine/Lime Cordial</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Monsieur Château</span><span class="desc">Bourbon, Almond Liqueur, Honey Syrup</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Keeper of Silence</span><span class="desc">Armenian Brandy, Peach Cordial, Wine Aperitif</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Amelie</span><span class="desc">Bourbon, Kumys, Spiced Syrup</span><span class="price">5 088 kzt</span></div>
+                                <div class="cocktail-item"><span class="name">Martina Nerra</span><span class="desc">Martini Fiero, Xeres, Mandarine Napoleon</span><span class="price">5 088 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tea / Coffee -->
+                    <div style="max-width:820px;margin:24px auto 0;display:grid;grid-template-columns:1fr 1fr;gap:16px 40px;">
+                        <div>
+                            <div class="bar-category"><h4>Loose Leaf Tea</h4>
+                                <div class="bar-item"><span class="name">Assam</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Sencha</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Milk Oolong</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Earl Grey</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Jasmine</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Rooibos</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Da Hong Pao</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Shu Puerh</span><span class="price">2 888 kzt</span></div>
+                                <div class="bar-item"><span class="name">Tie Guan Yin</span><span class="price">2 888 kzt</span></div>
+                            </div>
+                            <div class="bar-category"><h4>Signature Tea</h4>
+                                <div class="bar-item"><span class="name">Tashkent</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Moroccan</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Ginger</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Forest Blend</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Wild Herbs</span><span class="price">3 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Sicilian Orange</span><span class="price">3 788 kzt</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bar-category"><h4>Coffee, Matcha</h4>
+                                <div class="bar-item"><span class="name">Espresso</span><span class="price">988 kzt</span></div>
+                                <div class="bar-item"><span class="name">Doppio</span><span class="price">1 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Americano</span><span class="price">1 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Cappuccino</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Latte</span><span class="price">1 788 kzt</span></div>
+                                <div class="bar-item"><span class="name">Flat White</span><span class="price">1 588 kzt</span></div>
+                                <div class="bar-item"><span class="name">Bumble Coffee</span><span class="price">2 488 kzt</span></div>
+                                <div class="bar-item"><span class="name">Matcha Latte</span><span class="price">2 288 kzt</span></div>
+                                <div class="bar-item"><span class="name">Matcha Coconut-Peach</span><span class="price">2 688 kzt</span></div>
+                                <div class="bar-item"><span class="name">Matcha Banana-Strawberry</span><span class="price">2 688 kzt</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-notice">Service 10%</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===== КОНТАКТЫ ===== -->
+        <section class="menu-section" id="contact">
+            <div class="container">
+                <div class="category-head fade-up">
+                    <h3 class="gold-script">Контакты <span class="gold">·</span> Contacts <span class="gold">·</span> Байланыс</h3>
+                    <div class="sub">Мы всегда рады встрече с вами · We are always happy to welcome you · Сізбен кездесуге әрдайым қуаныштымыз</div>
+                    <div class="gold-divider"></div>
+                </div>
+
+                <!-- РУССКИЙ -->
+                <div class="contact-grid lang-content active" data-lang="ru">
+                    <div class="contact-info fade-up">
+                        <h4>Как нас найти</h4>
+                        <p class="contact-address">ул. Кармысова 54, Алматы, Казахстан</p>
+
+                        <div class="social-buttons">
+                            <a class="social-btn whatsapp-btn" href="https://wa.me/77020666766" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 32 32" class="social-icon"><path d="M16 3C9.1 3 3.5 8.6 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-2.3c1.9 1.1 4 1.6 6 1.6 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.4 1.4-4.1-.2-.4c-1.1-1.7-1.7-3.7-1.7-5.7 0-5.9 4.8-10.7 10.7-10.7S26.4 9.6 26.4 15.5 21.9 25.7 16 25.7zm5.9-8c-.3-.2-1.9-.9-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a class="social-btn instagram-btn" href="https://www.instagram.com/osobnyak.restaurant/" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 32 32" class="social-icon"><rect x="4" y="4" width="24" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="23" cy="9" r="1.6" fill="currentColor"/></svg>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+
+                        <p class="contact-note">Забронируйте столик по телефону или напишите нам напрямую в WhatsApp — мы ответим в течение нескольких минут.</p>
+                    </div>
+
+                    <form class="contact-form fade-up" data-lang-form="ru">
+                        <h4>Обратная связь</h4>
+                        <input type="text" name="name" placeholder="Ваше имя" required />
+                        <input type="tel" name="phone" placeholder="Телефон" required />
+                        <textarea name="message" placeholder="Ваше сообщение" rows="4"></textarea>
+                        <button type="submit" class="form-submit-btn">Отправить в WhatsApp</button>
+                        <p class="form-hint">Нажимая «Отправить», вы перейдёте в WhatsApp с готовым сообщением</p>
+                    </form>
+                </div>
+
+                <!-- ҚАЗАҚША -->
+                <div class="contact-grid lang-content" data-lang="kk">
+                    <div class="contact-info fade-up">
+                        <h4>Бізді қалай табуға болады</h4>
+                        <p class="contact-address">Кармысова көшесі 54, Алматы, Қазақстан</p>
+
+                        <div class="social-buttons">
+                            <a class="social-btn whatsapp-btn" href="https://wa.me/77020666766" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 32 32" class="social-icon"><path d="M16 3C9.1 3 3.5 8.6 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-2.3c1.9 1.1 4 1.6 6 1.6 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.4 1.4-4.1-.2-.4c-1.1-1.7-1.7-3.7-1.7-5.7 0-5.9 4.8-10.7 10.7-10.7S26.4 9.6 26.4 15.5 21.9 25.7 16 25.7zm5.9-8c-.3-.2-1.9-.9-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a class="social-btn instagram-btn" href="https://www.instagram.com/osobnyak.restaurant/" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 32 32" class="social-icon"><rect x="4" y="4" width="24" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="23" cy="9" r="1.6" fill="currentColor"/></svg>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+
+                        <p class="contact-note">Үстел брондау үшін қоңырау шалыңыз немесе WhatsApp арқылы тікелей жазыңыз — біз бірнеше минут ішінде жауап береміз.</p>
+                    </div>
+
+                    <form class="contact-form fade-up" data-lang-form="kk">
+                        <h4>Кері байланыс</h4>
+                        <input type="text" name="name" placeholder="Атыңыз" required />
+                        <input type="tel" name="phone" placeholder="Телефон" required />
+                        <textarea name="message" placeholder="Хабарламаңыз" rows="4"></textarea>
+                        <button type="submit" class="form-submit-btn">WhatsApp-қа жіберу</button>
+                        <p class="form-hint">«Жіберу» түймесін басқанда сіз дайын хабарламамен WhatsApp-қа өтесіз</p>
+                    </form>
+                </div>
+
+                <!-- ENGLISH -->
+                <div class="contact-grid lang-content" data-lang="en">
+                    <div class="contact-info fade-up">
+                        <h4>Find Us</h4>
+                        <p class="contact-address">54 Karmysova St, Almaty, Kazakhstan</p>
+
+                        <div class="social-buttons">
+                            <a class="social-btn whatsapp-btn" href="https://wa.me/77771234567" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 32 32" class="social-icon"><path d="M16 3C9.1 3 3.5 8.6 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-2.3c1.9 1.1 4 1.6 6 1.6 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.4 1.4-4.1-.2-.4c-1.1-1.7-1.7-3.7-1.7-5.7 0-5.9 4.8-10.7 10.7-10.7S26.4 9.6 26.4 15.5 21.9 25.7 16 25.7zm5.9-8c-.3-.2-1.9-.9-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+                                <span>WhatsApp</span>
+                            </a>
+                            <a class="social-btn instagram-btn" href="https://www.instagram.com/osobnyak.restaurant/" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 32 32" class="social-icon"><rect x="4" y="4" width="24" height="24" rx="7" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="6" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="23" cy="9" r="1.6" fill="currentColor"/></svg>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+
+                        <p class="contact-note">Book a table by phone, or message us directly on WhatsApp — we'll reply within minutes.</p>
+                    </div>
+
+                    <form class="contact-form fade-up" data-lang-form="en">
+                        <h4>Get in Touch</h4>
+                        <input type="text" name="name" placeholder="Your name" required />
+                        <input type="tel" name="phone" placeholder="Phone" required />
+                        <textarea name="message" placeholder="Your message" rows="4"></textarea>
+                        <button type="submit" class="form-submit-btn">Send via WhatsApp</button>
+                        <p class="form-hint">Pressing "Send" opens WhatsApp with your message ready to go</p>
+                    </form>
+                </div>
+
+                <!-- КАРТА — снизу меню, во всю ширину -->
+                <div class="map-wrap fade-up">
+                    <iframe
+                        src="https://www.google.com/maps?q=Karmysova+54,+Almaty,+Kazakhstan&output=embed"
+                        width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" title="Особняк · Mansion — на карте">
+                    </iframe>
+
+                    <a class="map-pin-overlay" href="https://www.google.com/maps/dir/?api=1&destination=Karmysova+54,+Almaty,+Kazakhstan" target="_blank" rel="noopener" aria-label="Открыть маршрут в Google Maps">
+                        <span class="map-pin-badge">
+                            <svg viewBox="0 0 24 24"><path d="M12 2 2 9v13h7v-8h6v8h7V9L12 2z"/></svg>
+                        </span>
+                        <span class="map-pin-label lang-content active" data-lang="ru">
+                            <strong>Особняк</strong>
+                            <span>ул. Кармысова, 54</span>
+                        </span>
+                        <span class="map-pin-label lang-content" data-lang="kk">
+                            <strong>Особняк</strong>
+                            <span>Кармысова көшесі, 54</span>
+                        </span>
+                        <span class="map-pin-label lang-content" data-lang="en">
+                            <strong>Mansion</strong>
+                            <span>54 Karmysova St</span>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="map-links lang-content active" data-lang="ru">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Karmysova+54,+Almaty,+Kazakhstan" target="_blank" rel="noopener">Открыть в Google Maps</a>
+                    <span class="map-links-sep">·</span>
+                    <a href="https://2gis.kz/almaty/search/Кармысова%2054" target="_blank" rel="noopener">Открыть в 2ГИС</a>
+                </div>
+                <div class="map-links lang-content" data-lang="kk">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Karmysova+54,+Almaty,+Kazakhstan" target="_blank" rel="noopener">Google Maps-та ашу</a>
+                    <span class="map-links-sep">·</span>
+                    <a href="https://2gis.kz/almaty/search/Кармысова%2054" target="_blank" rel="noopener">2ГИС-те ашу</a>
+                </div>
+                <div class="map-links lang-content" data-lang="en">
+                    <a href="https://www.google.com/maps/dir/?api=1&destination=Karmysova+54,+Almaty,+Kazakhstan" target="_blank" rel="noopener">Open in Google Maps</a>
+                    <span class="map-links-sep">·</span>
+                    <a href="https://2gis.kz/almaty/search/Кармысова%2054" target="_blank" rel="noopener">Open in 2GIS</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <a href="#" class="logo">Особняк <span>·</span> Mansion</a>
+            <p>&copy; <span id="year">2025</span> · В самом сердце города · In the heart of the city · Қаланың қақ ортасында</p>
+            <p style="opacity:0.3;font-size:0.6rem;">Все цены указаны в тенге · All prices in tenge · Барлық бағалар теңгемен көрсетілген</p>
+        </div>
+    </footer>
+
+    <a id="whatsappFloat" class="whatsapp-float" href="https://wa.me/77020666766" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <svg viewBox="0 0 32 32"><path d="M16 3C9.1 3 3.5 8.6 3.5 15.5c0 2.4.7 4.7 1.9 6.7L3 29l7-2.3c1.9 1.1 4 1.6 6 1.6 6.9 0 12.5-5.6 12.5-12.5S22.9 3 16 3zm0 22.7c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.2 1.4 1.4-4.1-.2-.4c-1.1-1.7-1.7-3.7-1.7-5.7 0-5.9 4.8-10.7 10.7-10.7S26.4 9.6 26.4 15.5 21.9 25.7 16 25.7zm5.9-8c-.3-.2-1.9-.9-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.3-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7.1-.1.3-.4.5-.5.2-.2.2-.3.3-.5.1-.2.1-.4 0-.6-.1-.2-.7-1.7-1-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.8 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.9-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.1-.3-.2-.6-.3z"/></svg>
+    </a>
+
+    <button id="backToTop" class="back-to-top" aria-label="Наверх">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
